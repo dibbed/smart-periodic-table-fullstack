@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="100%" height="100%">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480">
   <defs>
     <radialGradient id="bgGlow" cx="50%" cy="50%" r="70%">
       <stop offset="0%" stop-color="#0c1836"/>
@@ -41,9 +42,9 @@
   <circle cx="44" cy="42" r="5" fill="#ef4444"/>
   <circle cx="60" cy="42" r="5" fill="#f59e0b"/>
   <circle cx="76" cy="42" r="5" fill="#10b981"/>
-  <text x="100" y="46" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">3D WebGL Atom Simulation Engine &bull; Iron (26-Fe)</text>
+  <text x="100" y="46" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">3D WebGL Atom Simulation Engine &#8226; Iron (26-Fe)</text>
   <rect x="680" y="28" width="180" height="28" rx="6" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
-  <text x="695" y="46" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">60 FPS &bull; ZERO-LEAK GC</text>
+  <text x="695" y="46" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">60 FPS &#8226; ZERO-LEAK GC</text>
 
   <g transform="translate(450, 260)" stroke="#1e293b" stroke-dasharray="3,3" fill="none">
     <circle r="210"/>
@@ -125,6 +126,6 @@
     <circle cx="35" cy="22.5" r="14" fill="#1e293b"/>
     <polygon points="32,16 41,22.5 32,29" fill="#00f0ff"/>
     <text x="60" y="27" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Speed: 1.0x</text>
-    <text x="160" y="27" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Drag to Orbit &bull; Scroll to Zoom</text>
+    <text x="160" y="27" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Drag to Orbit &#8226; Scroll to Zoom</text>
   </g>
 </svg>

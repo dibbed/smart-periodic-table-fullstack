@@ -6,7 +6,7 @@ if (!fs.existsSync(docsDir)) {
   fs.mkdirSync(docsDir, { recursive: true });
 }
 
-const atom3dSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="100%" height="100%">
+const atom3dSvg = `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480">
   <defs>
     <radialGradient id="bgGlow" cx="50%" cy="50%" r="70%">
       <stop offset="0%" stop-color="#0c1836"/>
@@ -49,9 +49,9 @@ const atom3dSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480"
   <circle cx="44" cy="42" r="5" fill="#ef4444"/>
   <circle cx="60" cy="42" r="5" fill="#f59e0b"/>
   <circle cx="76" cy="42" r="5" fill="#10b981"/>
-  <text x="100" y="46" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">3D WebGL Atom Simulation Engine &bull; Iron (26-Fe)</text>
+  <text x="100" y="46" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">3D WebGL Atom Simulation Engine &#8226; Iron (26-Fe)</text>
   <rect x="680" y="28" width="180" height="28" rx="6" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
-  <text x="695" y="46" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">60 FPS &bull; ZERO-LEAK GC</text>
+  <text x="695" y="46" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">60 FPS &#8226; ZERO-LEAK GC</text>
 
   <g transform="translate(450, 260)" stroke="#1e293b" stroke-dasharray="3,3" fill="none">
     <circle r="210"/>
@@ -133,11 +133,11 @@ const atom3dSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480"
     <circle cx="35" cy="22.5" r="14" fill="#1e293b"/>
     <polygon points="32,16 41,22.5 32,29" fill="#00f0ff"/>
     <text x="60" y="27" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Speed: 1.0x</text>
-    <text x="160" y="27" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Drag to Orbit &bull; Scroll to Zoom</text>
+    <text x="160" y="27" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Drag to Orbit &#8226; Scroll to Zoom</text>
   </g>
 </svg>`;
 
-const tempSliderSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="100%" height="100%">
+const tempSliderSvg = `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480">
   <defs>
     <linearGradient id="bgGlow2" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#050a18"/>
@@ -159,7 +159,7 @@ const tempSliderSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 
   <circle cx="44" cy="42" r="5" fill="#ef4444"/>
   <circle cx="60" cy="42" r="5" fill="#f59e0b"/>
   <circle cx="76" cy="42" r="5" fill="#10b981"/>
-  <text x="100" y="46" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Thermodynamic Kelvin Phase Transition Engine &bull; Spectrum Simulation</text>
+  <text x="100" y="46" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Thermodynamic Kelvin Phase Transition Engine &#8226; Spectrum Simulation</text>
   <rect x="680" y="28" width="180" height="28" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
   <text x="698" y="46" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">T = 298.15 K (25.0°C)</text>
 
@@ -186,7 +186,7 @@ const tempSliderSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 
       <text x="16" y="58" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Elements Count: <tspan fill="#38bdf8" font-weight="700">93</tspan></text>
       <text x="16" y="80" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Condition: T &lt; T_melt</text>
       <rect x="16" y="100" width="148" height="90" rx="6" fill="#0b1329"/>
-      <text x="26" y="125" fill="#60a5fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Fe &bull; Au &bull; C &bull; Ti &bull; Cu</text>
+      <text x="26" y="125" fill="#60a5fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Fe &#8226; Au &#8226; C &#8226; Ti &#8226; Cu</text>
       <text x="26" y="150" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Iron Tm = 1811 K</text>
       <text x="26" y="170" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Rigid lattice bonds</text>
     </g>
@@ -198,7 +198,7 @@ const tempSliderSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 
       <text x="16" y="58" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Elements Count: <tspan fill="#34d399" font-weight="700">2</tspan></text>
       <text x="16" y="80" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Condition: Tm ≤ T &lt; Tb</text>
       <rect x="16" y="100" width="148" height="90" rx="6" fill="#0b1329"/>
-      <text x="26" y="125" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Hg (Mercury) &bull; Br (Bromine)</text>
+      <text x="26" y="125" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Hg (Mercury) &#8226; Br (Bromine)</text>
       <text x="26" y="150" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Hg Tm: 234.3 K</text>
       <text x="26" y="170" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Br Tm: 265.8 K</text>
     </g>
@@ -222,14 +222,14 @@ const tempSliderSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 
       <text x="16" y="58" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Superheavies: <tspan fill="#c084fc" font-weight="700">12</tspan></text>
       <text x="16" y="80" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">SATP / Relativistic calc</text>
       <rect x="16" y="100" width="148" height="90" rx="6" fill="#0b1329"/>
-      <text x="26" y="125" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Og (118) &bull; Ts (117) &bull; Fl</text>
+      <text x="26" y="125" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Og (118) &#8226; Ts (117) &#8226; Fl</text>
       <text x="26" y="150" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">No fake constants</text>
       <text x="26" y="170" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Safe 'نامشخص' fallback</text>
     </g>
   </g>
 </svg>`;
 
-const modalsSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="100%" height="100%">
+const modalsSvg = `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480">
   <defs>
     <radialGradient id="bgGlow3" cx="50%" cy="50%" r="70%">
       <stop offset="0%" stop-color="#0c1836"/>
@@ -245,12 +245,12 @@ const modalsSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480"
   <circle cx="44" cy="42" r="5" fill="#ef4444"/>
   <circle cx="60" cy="42" r="5" fill="#f59e0b"/>
   <circle cx="76" cy="42" r="5" fill="#10b981"/>
-  <text x="100" y="46" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Analytical Suite &bull; Multi-Element Matrix Comparison &amp; Knowledge Assessment</text>
+  <text x="100" y="46" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Analytical Suite &#8226; Multi-Element Matrix Comparison &amp; Knowledge Assessment</text>
 
   <g transform="translate(35, 85)">
     <rect width="400" height="365" rx="10" fill="#080e21" stroke="#1e293b" stroke-width="1.5"/>
     <rect x="0" y="0" width="400" height="42" rx="10" fill="#0f172a"/>
-    <text x="20" y="27" fill="#00f0ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">POST /api/compare &bull; Matrix Analysis</text>
+    <text x="20" y="27" fill="#00f0ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">POST /api/compare &#8226; Matrix Analysis</text>
     
     <rect x="20" y="55" width="70" height="26" rx="5" fill="#f43f5e" fill-opacity="0.2" stroke="#f43f5e" stroke-width="1"/>
     <text x="32" y="72" fill="#fda4af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">H (1)</text>
@@ -302,12 +302,12 @@ const modalsSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480"
   <g transform="translate(465, 85)">
     <rect width="400" height="365" rx="10" fill="#080e21" stroke="#1e293b" stroke-width="1.5"/>
     <rect x="0" y="0" width="400" height="42" rx="10" fill="#0f172a"/>
-    <text x="20" y="27" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">GET /api/quiz &bull; Question 3 of 10</text>
+    <text x="20" y="27" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">GET /api/quiz &#8226; Question 3 of 10</text>
 
     <g transform="translate(20, 60)">
       <rect width="360" height="65" rx="6" fill="#0f172a" stroke="#1e293b"/>
       <text x="16" y="28" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">عنصر «آهن» (Fe) در کدام بلوک الکترونی جدول واقع است؟</text>
-      <text x="16" y="48" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Category: Block Classification &bull; Fisher-Yates Shuffled Options</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Category: Block Classification &#8226; Fisher-Yates Shuffled Options</text>
 
       <g transform="translate(0, 80)">
         <rect width="360" height="36" rx="6" fill="#0b1329" stroke="#1e293b"/>
@@ -320,7 +320,7 @@ const modalsSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480"
         <rect width="360" height="36" rx="6" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1.5"/>
         <circle cx="24" cy="18" r="9" fill="#10b981"/>
         <text x="20" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">✓</text>
-        <text x="45" y="22" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">بلوک D (d-block) &bull; Correct Answer</text>
+        <text x="45" y="22" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">بلوک D (d-block) &#8226; Correct Answer</text>
       </g>
 
       <g transform="translate(0, 170)">
