@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>جدول تناوبی هوشمند و پیشرفته عناصر</title>
+
+  <!-- Google Fonts: Vazirmatn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Vazirmatn', 'sans-serif'],
+          },
+          colors: {
+            quantum: {
+              bg: '#050814',
+              card: '#0c1226',
+              border: '#1e293b',
+              neonCyan: '#00f0ff',
+              neonPink: '#ff007f',
+              neonGold: '#ffb703',
+              neonEmerald: '#10b981'
+            }
+          }
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- React & ReactDOM CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+  <!-- Babel Standalone for JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Three.js CDN for 3D Atomic Model -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="text-slate-100 min-h-screen overflow-x-hidden hud-scanline">
+  <!-- React Root Mount Container -->
+  <div id="root"></div>
+
+  <!-- Modular Application Scripts -->
+  <script type="text/babel" src="js/constants.js"></script>
+  <script type="text/babel" src="js/atom3d.js"></script>
+  <script type="text/babel" src="js/Quiz.js"></script>
+  <script type="text/babel" src="js/Compare.js"></script>
+  <script type="text/babel" src="js/CompoundBuilder.js"></script>
+  <script type="text/babel" src="js/PeriodicTable.js"></script>
+  <script type="text/babel" src="js/App.js"></script>
+</body>
+</html>

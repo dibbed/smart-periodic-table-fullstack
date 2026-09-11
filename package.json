@@ -1,0 +1,56 @@
+{
+  "name": "smart-periodic-table-fullstack",
+  "version": "2.2.0",
+  "private": true,
+  "description": "Enterprise-grade interactive 3D Periodic Table & Chemical Simulation Engine built with React 18, Three.js, Node.js, Express, and SQLite.",
+  "author": "Ali Khalili (https://github.com/dibbed)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dibbed/smart-periodic-table-fullstack.git"
+  },
+  "homepage": "https://github.com/dibbed/smart-periodic-table-fullstack#readme",
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "dev": "concurrently -k -p \"[{name}]\" -n \"server,client\" -c \"cyan,magenta\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cross-env NODE_ENV=development node --no-warnings server.js",
+    "dev:client": "cross-env NODE_ENV=development vite",
+    "seed": "node --no-warnings scripts/seed.js",
+    "reset-db": "node --no-warnings scripts/seed.js --reset",
+    "clean": "node -e \"const fs=require('fs'); ['dist','lib'].forEach(p=>{try{fs.rmSync(p,{recursive:true,force:true})}catch{}}); console.log('Cleaned dist and legacy directories.');\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/api.test.js tests/elements.test.js",
+    "test:unit": "node --test tests/api.test.js tests/elements.test.js",
+    "test:api": "node --test tests/api.test.js",
+    "test:backend": "node --no-warnings scripts/verify-backend.js",
+    "test:frontend": "node --no-warnings scripts/verify-frontend.js",
+    "test:integration": "node scripts/verify-integration.js",
+    "test:all": "node --test tests/api.test.js tests/elements.test.js && node --no-warnings scripts/self-test.js && node --no-warnings scripts/verify-backend.js && node --no-warnings scripts/verify-frontend.js && node scripts/verify-integration.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "lucide-react": "^1.16.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.170.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "vite": "^6.0.3",
+    "cross-env": "^10.1.0"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

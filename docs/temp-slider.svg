@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGlow2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050a18"/>
+      <stop offset="100%" stop-color="#020409"/>
+    </linearGradient>
+    <linearGradient id="sliderTrack" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="20%" stop-color="#06b6d4"/>
+      <stop offset="45%" stop-color="#10b981"/>
+      <stop offset="65%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="480" rx="12" fill="url(#bgGlow2)"/>
+  <rect width="898" height="478" x="1" y="1" rx="11" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+
+  <rect x="24" y="20" width="852" height="44" rx="8" fill="#0b1329" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="44" cy="42" r="5" fill="#ef4444"/>
+  <circle cx="60" cy="42" r="5" fill="#f59e0b"/>
+  <circle cx="76" cy="42" r="5" fill="#10b981"/>
+  <text x="100" y="46" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Thermodynamic Kelvin Phase Transition Engine &bull; Spectrum Simulation</text>
+  <rect x="680" y="28" width="180" height="28" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="698" y="46" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">T = 298.15 K (25.0°C)</text>
+
+  <g transform="translate(60, 95)">
+    <rect width="780" height="110" rx="10" fill="#080e21" stroke="#1e293b" stroke-width="1"/>
+    <text x="24" y="36" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">SIMULATED TEMPERATURE</text>
+    <text x="640" y="36" fill="#00f0ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">298 K / 25°C</text>
+
+    <rect x="24" y="58" width="732" height="14" rx="7" fill="url(#sliderTrack)"/>
+    <circle cx="95" cy="65" r="14" fill="#ffffff" stroke="#0284c7" stroke-width="4"/>
+
+    <text x="24" y="95" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">0 K (Abs. Zero)</text>
+    <text x="95" y="95" fill="#00f0ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">298 K (SATP)</text>
+    <text x="360" y="95" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">1811 K (Fe Tm)</text>
+    <text x="540" y="95" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">3134 K (Fe Tb)</text>
+    <text x="715" y="95" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">6000 K (Sun surf.)</text>
+  </g>
+
+  <g transform="translate(60, 230)">
+    <g transform="translate(0, 0)">
+      <rect width="180" height="210" rx="8" fill="#080e21" stroke="#0284c7" stroke-width="1.5"/>
+      <rect x="0" y="0" width="180" height="34" rx="8" fill="#0284c7" fill-opacity="0.15"/>
+      <text x="16" y="23" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">SOLID (جامد)</text>
+      <text x="16" y="58" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Elements Count: <tspan fill="#38bdf8" font-weight="700">93</tspan></text>
+      <text x="16" y="80" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Condition: T &lt; T_melt</text>
+      <rect x="16" y="100" width="148" height="90" rx="6" fill="#0b1329"/>
+      <text x="26" y="125" fill="#60a5fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Fe &bull; Au &bull; C &bull; Ti &bull; Cu</text>
+      <text x="26" y="150" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Iron Tm = 1811 K</text>
+      <text x="26" y="170" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Rigid lattice bonds</text>
+    </g>
+
+    <g transform="translate(200, 0)">
+      <rect width="180" height="210" rx="8" fill="#080e21" stroke="#10b981" stroke-width="1.5"/>
+      <rect x="0" y="0" width="180" height="34" rx="8" fill="#10b981" fill-opacity="0.15"/>
+      <text x="16" y="23" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">LIQUID (مایع)</text>
+      <text x="16" y="58" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Elements Count: <tspan fill="#34d399" font-weight="700">2</tspan></text>
+      <text x="16" y="80" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Condition: Tm ≤ T &lt; Tb</text>
+      <rect x="16" y="100" width="148" height="90" rx="6" fill="#0b1329"/>
+      <text x="26" y="125" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Hg (Mercury) &bull; Br (Bromine)</text>
+      <text x="26" y="150" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Hg Tm: 234.3 K</text>
+      <text x="26" y="170" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Br Tm: 265.8 K</text>
+    </g>
+
+    <g transform="translate(400, 0)">
+      <rect width="180" height="210" rx="8" fill="#080e21" stroke="#f59e0b" stroke-width="1.5"/>
+      <rect x="0" y="0" width="180" height="34" rx="8" fill="#f59e0b" fill-opacity="0.15"/>
+      <text x="16" y="23" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">GAS (گاز)</text>
+      <text x="16" y="58" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Elements Count: <tspan fill="#fbbf24" font-weight="700">11</tspan></text>
+      <text x="16" y="80" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Condition: T ≥ T_boil</text>
+      <rect x="16" y="100" width="148" height="90" rx="6" fill="#0b1329"/>
+      <text x="26" y="125" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">H, He, N, O, F, Ne, Ar...</text>
+      <text x="26" y="150" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Oxygen Tb: 90.2 K</text>
+      <text x="26" y="170" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Unbound kinetic freedom</text>
+    </g>
+
+    <g transform="translate(600, 0)">
+      <rect width="180" height="210" rx="8" fill="#080e21" stroke="#a855f7" stroke-width="1.5"/>
+      <rect x="0" y="0" width="180" height="34" rx="8" fill="#a855f7" fill-opacity="0.15"/>
+      <text x="16" y="23" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">PREDICTED (پیش‌بینی)</text>
+      <text x="16" y="58" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Superheavies: <tspan fill="#c084fc" font-weight="700">12</tspan></text>
+      <text x="16" y="80" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">SATP / Relativistic calc</text>
+      <rect x="16" y="100" width="148" height="90" rx="6" fill="#0b1329"/>
+      <text x="26" y="125" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Og (118) &bull; Ts (117) &bull; Fl</text>
+      <text x="26" y="150" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">No fake constants</text>
+      <text x="26" y="170" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Safe 'نامشخص' fallback</text>
+    </g>
+  </g>
+</svg>
