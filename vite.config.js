@@ -11,6 +11,11 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
+    // Project Pages live under /smart-periodic-table-fullstack/, not domain root.
+    base: env.VITE_BASE_PATH || '/',
+    // The legacy public/index.html conflicts with Vite's generated index.html.
+    // Exclude that legacy client only for the Pages preview build.
+    publicDir: env.VITE_STATIC_DEMO === 'true' ? false : 'public',
     server: {
       port: 5173,
       host: '127.0.0.1',

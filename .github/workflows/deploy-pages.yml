@@ -1,0 +1,66 @@
+name: Deploy static periodic-table preview to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Build static GitHub Pages preview
+        run: npm run build
+        env:
+          VITE_STATIC_DEMO: 'true'
+          VITE_BASE_PATH: '/smart-periodic-table-fullstack/'
+
+      - name: Verify built SPA and asset paths
+        shell: bash
+        run: |
+          test -s dist/index.html
+          test -d dist/assets
+          ! grep -q '/src/main.jsx' dist/index.html
+          grep -q '/smart-periodic-table-fullstack/assets/' dist/index.html
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
