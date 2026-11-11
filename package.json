@@ -21,13 +21,13 @@
     "clean": "node -e \"const fs=require('fs'); ['dist','lib'].forEach(p=>{try{fs.rmSync(p,{recursive:true,force:true})}catch{}}); console.log('Cleaned dist and legacy directories.');\"",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node --test tests/api.test.js tests/elements.test.js",
-    "test:unit": "node --test tests/api.test.js tests/elements.test.js",
+    "test": "node --test --test-concurrency=1 tests/api.test.js tests/elements.test.js",
+    "test:unit": "node --test --test-concurrency=1 tests/api.test.js tests/elements.test.js",
     "test:api": "node --test tests/api.test.js",
     "test:backend": "node --no-warnings scripts/verify-backend.js",
     "test:frontend": "node --no-warnings scripts/verify-frontend.js",
     "test:integration": "node scripts/verify-integration.js",
-    "test:all": "node --test tests/api.test.js tests/elements.test.js && node --no-warnings scripts/self-test.js && node --no-warnings scripts/verify-backend.js && node --no-warnings scripts/verify-frontend.js && node scripts/verify-integration.js"
+    "test:all": "node --test --test-concurrency=1 tests/api.test.js tests/elements.test.js && node --no-warnings scripts/self-test.js && node --no-warnings scripts/verify-backend.js && node --no-warnings scripts/verify-frontend.js && node scripts/verify-integration.js"
   },
   "dependencies": {
     "better-sqlite3": "^11.8.1",
