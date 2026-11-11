@@ -1,5 +1,7 @@
 # Smart Periodic Table & 3D Chemical Engine
 
+🌐 **Live Demo:** [https://dibbed.github.io/smart-periodic-table-fullstack/](https://dibbed.github.io/smart-periodic-table-fullstack/)
+
 [![CI Pipeline](https://img.shields.io/github/actions/workflow/status/dibbed/smart-periodic-table-fullstack/ci.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=CI%20Pipeline)](https://github.com/dibbed/smart-periodic-table-fullstack/actions)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D22.5.0-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-4.21-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
